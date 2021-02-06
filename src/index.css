@@ -8,6 +8,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  overflow: hidden;
+  background: url('./assets/images/texture.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: inherit;
 }
 
 code {
