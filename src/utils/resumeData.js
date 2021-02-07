@@ -3,6 +3,7 @@ import FacebookIcon from '@material-ui/icons/Facebook'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TwitterIcon from '@material-ui/icons/Twitter'
+import { AssignmentOutlined, WebOutlined } from '@material-ui/icons'
 
 export default {
   name: 'Luke Carnevale',
@@ -71,6 +72,61 @@ export default {
       title: 'education 3',
       date: 'Aug 2016 - May 2017',
       description: "Did stuff and thing for someone during this time and executed flawessly. Marketed through various avenues to objectively grow the company into a fortune 500 enterprise. Yeah, we did pretty well. That's all that needs to be said"
+    }
+  ],
+
+  service: [
+    {
+      title: 'Web Development',
+      description: 'I have been developing the webs for many eions',
+      icon: <WebOutlined />
+    },
+    {
+      title: 'Branding Identity',
+      description: 'I have been developing the webs for many eions',
+      icon: <AssignmentOutlined />
+    },
+    {
+      title: 'Dakine Services',
+      description: 'I have been developing the webs for many eions',
+      icon: <WebOutlined />
+    }
+  ],
+
+  skills: [
+    {
+      title: 'FRONT-END',
+      description: [
+        'ReactJS',
+        'Javascript',
+        'Typescript',
+        'Bootstrap',
+        'Material UI'
+      ]
+    },
+    {
+      title: 'BACK-END',
+      description: [
+        'NodeJS',
+        'Python',
+        'Django'
+      ]
+    },
+    {
+      title: 'DATABASES',
+      description: [
+        'MySQL',
+        'Ms SQL Server',
+        'MongoDB'
+      ]
+    },
+    {
+      title: 'SOURCE CONTROL',
+      description: [
+        'Git',
+        'GitHub',
+        'SCRUM/Agile'
+      ]
     }
   ]
 }
