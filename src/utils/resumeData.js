@@ -36,5 +36,41 @@ export default {
     }
   },
 
-  about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+
+  experiences: [
+    {
+      title: 'Work 1',
+      date: '2019 - Present',
+      description: "Did stuff and thing for someone during this time and executed flawessly. Marketed through various avenues to objectively grow the company into a fortune 500 enterprise. Yeah, we did pretty well. That's all that needs to be said"
+    },
+    {
+      title: 'Work 2',
+      date: '2017 - 2019',
+      description: "Did stuff and thing for someone during this time and executed flawessly. Marketed through various avenues to objectively grow the company into a fortune 500 enterprise. Yeah, we did pretty well. That's all that needs to be said"
+    },
+    {
+      title: 'Work 3',
+      date: 'Aug 2016 - May 2017',
+      description: "Did stuff and thing for someone during this time and executed flawessly. Marketed through various avenues to objectively grow the company into a fortune 500 enterprise. Yeah, we did pretty well. That's all that needs to be said"
+    }
+  ],
+
+  education: [
+    {
+      title: 'education 1',
+      date: '2019 - Present',
+      description: "Did stuff and thing for someone during this time and executed flawessly. Marketed through various avenues to objectively grow the company into a fortune 500 enterprise. Yeah, we did pretty well. That's all that needs to be said"
+    },
+    {
+      title: 'education 2',
+      date: '2017 - 2019',
+      description: "Did stuff and thing for someone during this time and executed flawessly. Marketed through various avenues to objectively grow the company into a fortune 500 enterprise. Yeah, we did pretty well. That's all that needs to be said"
+    },
+    {
+      title: 'education 3',
+      date: 'Aug 2016 - May 2017',
+      description: "Did stuff and thing for someone during this time and executed flawessly. Marketed through various avenues to objectively grow the company into a fortune 500 enterprise. Yeah, we did pretty well. That's all that needs to be said"
+    }
+  ]
 }
