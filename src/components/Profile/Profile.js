@@ -8,6 +8,8 @@ import Luke from '../../assets/images/Luke.jpg'
 import './Profile.css'
 import TimelineItem from '@material-ui/lab/TimelineItem'
 import TimelineContent from '@material-ui/lab/TimelineContent'
+import CustomButton from '../Button/Button'
+import GetAppIcon from '@material-ui/icons/GetApp'
 
 const CustomTimelineItem = ({ title, text, link }) => {
   return (
@@ -50,8 +52,10 @@ const Profile = () => {
           <CustomTimelineItem title='Phone' text={resumeData.phone} />
 
         </CustomTimeline>
-        <br />
-        <button>My button</button>
+
+        <div className='btn_container'>
+          <CustomButton text='Download CV' icon={<GetAppIcon />} />
+        </div>
       </div>
     </div>
   )
