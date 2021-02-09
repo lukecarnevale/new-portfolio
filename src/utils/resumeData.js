@@ -3,7 +3,7 @@ import FacebookIcon from '@material-ui/icons/Facebook'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import TwitterIcon from '@material-ui/icons/Twitter'
-import { AssignmentOutlined, WebOutlined } from '@material-ui/icons'
+import { AssignmentOutlined, GitHub, Language, WebOutlined, YouTube } from '@material-ui/icons'
 
 export default {
   name: 'Luke Carnevale',
@@ -126,6 +126,53 @@ export default {
         'Git',
         'GitHub',
         'SCRUM/Agile'
+      ]
+    }
+  ],
+
+  projects: [
+    {
+      tag: 'React',
+      image: 'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN',
+      title: 'React Project 1',
+      description: 'This is my project description. Please fill it in',
+      links: [
+        { link: 'https://www.google.com', icon: <YouTube /> },
+        { link: 'https://www.google.com', icon: <GitHub /> },
+        { link: 'https://www.google.com', icon: <Language /> }
+      ]
+    },
+    {
+      tag: 'React',
+      image: 'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN',
+      title: 'React Project 2',
+      description: 'This is my project description. Please fill it in',
+      links: [
+        { link: 'https://www.google.com', icon: <YouTube /> },
+        { link: 'https://www.google.com', icon: <GitHub /> },
+        { link: 'https://www.google.com', icon: <Language /> }
+      ]
+    },
+    {
+      tag: 'Python',
+      image: 'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN',
+      title: 'Python Project 1',
+      description: 'This is my project description. Please fill it in',
+      links: [
+        { link: 'https://www.google.com', icon: <YouTube /> },
+        { link: 'https://www.google.com', icon: <GitHub /> },
+        { link: 'https://www.google.com', icon: <Language /> }
+      ]
+    },
+    {
+      tag: 'Javascript',
+      image: 'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN',
+      title: 'JS Project 1',
+      description: 'This is my project description. Please fill it in',
+      links: [
+        { link: 'https://www.google.com', icon: <YouTube /> },
+        { link: 'https://www.google.com', icon: <GitHub /> },
+        { link: 'https://www.google.com', icon: <Language /> }
       ]
     }
   ]
