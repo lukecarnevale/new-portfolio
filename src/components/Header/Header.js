@@ -29,6 +29,7 @@ const Header = (props) => {
   const pathName = props?.location?.pathname
 
   return (
+    
     <Navbar expand='lg' sticky='top' className='header'>
       <Nav.Link as={NavLink} to='/' className='header_navlink'>
         <Navbar.Brand className='header_home'>
@@ -77,8 +78,8 @@ const Header = (props) => {
           <CustomButton text='Hire Me' icon={<Telegram />}></CustomButton>
         </div>
       </Navbar.Collapse>
-
     </Navbar>
+   
   )
 }
 

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import './Resume.css'
-import { Grid, Icon, Paper, Typography } from '@material-ui/core'
+import { Grid, Icon, Paper, TextField, Typography } from '@material-ui/core'
 import resumeData from '../../utils/resumeData'
 import CustomTimeline, { CustomTimelineSeparator } from '../../components/Timeline/Timeline'
 import WorkIcon from '@material-ui/icons/Work'
@@ -11,6 +11,7 @@ import TimelineItem from '@material-ui/lab/TimelineItem'
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator'
 import TimelineContent from '@material-ui/lab/TimelineContent'
 import TimelineDot from '@material-ui/lab/TimelineDot'
+import CustomButton from '../../components/Button/Button'
 
 const Resume = () => {
   return (
@@ -112,7 +113,75 @@ const Resume = () => {
         ))}
       </Grid>
       {/* Contact */}
-      <Grid container className='section' />
+      <Grid container spacing={6} className='section pt_45 pb_45'>
+        {/* Contact Form */}
+        <Grid item xs={12} lg={7}>
+          <Grid container>
+          <Grid item className='section_title mb_30'>
+          <span />
+          <h6 className='section_title_text'>Contact Form</h6>
+        </Grid>
+        <Grid item xs={12}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={6}>
+              <TextField fullWidth name='name' label='Name'></TextField>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField fullWidth name='email' label='Email'></TextField>
+            </Grid>
+            <Grid item xs={12}>
+              <TextField fullWidth name='message' label='Message' multiline rows={4}></TextField>
+            </Grid>
+            <Grid item xs={12}>
+                  <CustomButton text='Submit'></CustomButton>
+            </Grid>
+          </Grid>
+        </Grid>
+          </Grid>
+        </Grid>
+
+        {/* Contact Information */}
+
+        <Grid item xs={12} lg={5}>
+          <Grid container>
+            <Grid item className='section_title mb_30'>
+            <span />
+            <h6 className='section_title_text'>Contact Information</h6>
+          </Grid>
+
+            <Grid item xs={12}>
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <Typography className='contactInfo_item'>
+                    <span>Address:</span> {resumeData.location}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography className='contactInfo_item'>
+                    <span>Phone:</span> {resumeData.phone}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}> 
+                  <Typography className='contactInfo_item'>
+                    <span>Email:</span> {resumeData.email}
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          
+            <Grid item xs={12}>
+              <Grid container className='contactInfo_socialContainer'> 
+                {Object.keys(resumeData.socials).map((key) => (
+                  <Grid item className='contactInfo_social'>
+                  <a href={resumeData.socials[key].link}>{resumeData.socials[key].icon}
+                  </a>
+                  </Grid>
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
     </>
   )
 }
