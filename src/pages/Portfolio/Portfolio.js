@@ -21,13 +21,12 @@ import resumeData from "../../utils/resumeData";
 
 const Portfolio = () => {
   const [tabValue, setTabValue] = useState("All");
-  const [projectDialog, setProjectDialog] = useState(false)
-
+  const [projectDialog, setProjectDialog] = useState(false);
 
   return (
-    <Grid container className="section pb_45 pt_45">
+    <Grid container spacing={1} className="section pb_45 pt_45">
       {/* Title */}
-      <Grid item className="section_title mb_30">
+      <Grid item className="section_title mb_20">
         <span />
         <h6 className="section_title_text">Portfolio</h6>
       </Grid>
@@ -55,7 +54,7 @@ const Portfolio = () => {
                 label={tag}
                 value={tag}
                 className={
-                  tabValue === "All"
+                  tabValue === tag
                     ? "customTabs_item active "
                     : "customTabs_item"
                 }
@@ -67,11 +66,11 @@ const Portfolio = () => {
 
       {/* Projects */}
       <Grid item xs={12}>
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           {resumeData.projects.map((project) => (
             <>
               {tabValue === project.tag || tabValue === "All" ? (
-                <Grid item>
+                <Grid item xs={12} sm={6} md={4}>
                   <Grow in timeout={1000}>
                     <Card
                       className="custom_card"
@@ -84,12 +83,15 @@ const Portfolio = () => {
                           title={project.title}
                         />
                         <CardContent>
-                          <Typography classname="customCard_title">
+                          <Typography
+                            variant="body2"
+                            className="customCard_title"
+                          >
                             {project.title}
                           </Typography>
                           <Typography
-                            variant='body2'
-                            className="customCard_description"
+                            variant="body2"
+                            className="customCard_caption"
                           >
                             {project.caption}
                           </Typography>
@@ -104,18 +106,33 @@ const Portfolio = () => {
         </Grid>
       </Grid>
 
-      <Dialog open={projectDialog} onClose={() => setProjectDialog(false)}>
-      <DialogTitle onClose={() => setProjectDialog(false)}>{projectDialog.title}</DialogTitle>
-      <img src='' alt=''></img>
-      <DialogContent>
-        {projectDialog.description}
-      </DialogContent>
-      <DialogActions>
-        {projectDialog?.links?.map(link => (
-          <a href={link.link} target='_blank'>{link.icon}</a>
-        ))}
-      </DialogActions>
-    </Dialog>
+      <Dialog
+        open={projectDialog}
+        onClose={() => setProjectDialog(false)}
+        className="project_dialog"
+        fullWidth
+      >
+        <DialogTitle onClose={() => setProjectDialog(false)}>
+          {projectDialog.title}
+        </DialogTitle>
+        <img
+          src={projectDialog.image}
+          alt={projectDialog.title}
+          className="projectDialog_image"
+        ></img>
+        <DialogContent>
+          <Typography className="projectDialog_description">
+            {projectDialog.description}
+          </Typography>
+        </DialogContent>
+        <DialogActions className="projectDialog_actions">
+          {projectDialog?.links?.map((link) => (
+            <a href={link.link} target="_blank" className="projectDialog_icon">
+              {link.icon}
+            </a>
+          ))}
+        </DialogActions>
+      </Dialog>
     </Grid>
   );
 };
