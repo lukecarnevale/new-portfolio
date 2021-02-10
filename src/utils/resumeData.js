@@ -135,6 +135,7 @@ export default {
       tag: 'React',
       image: 'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN',
       title: 'React Project 1',
+      caption: 'a short description',
       description: 'This is my project description. Please fill it in',
       links: [
         { link: 'https://www.google.com', icon: <YouTube /> },
@@ -146,6 +147,7 @@ export default {
       tag: 'React',
       image: 'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN',
       title: 'React Project 2',
+      caption: 'a short description',
       description: 'This is my project description. Please fill it in',
       links: [
         { link: 'https://www.google.com', icon: <YouTube /> },
@@ -157,6 +159,7 @@ export default {
       tag: 'Python',
       image: 'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN',
       title: 'Python Project 1',
+      caption: 'a short description',
       description: 'This is my project description. Please fill it in',
       links: [
         { link: 'https://www.google.com', icon: <YouTube /> },
@@ -168,6 +171,7 @@ export default {
       tag: 'Javascript',
       image: 'https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN',
       title: 'JS Project 1',
+      caption: 'a short description',
       description: 'This is my project description. Please fill it in',
       links: [
         { link: 'https://www.google.com', icon: <YouTube /> },

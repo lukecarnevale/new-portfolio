@@ -10,6 +10,10 @@ import {
   CardContent,
   Typography,
   Grow,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
 } from "@material-ui/core";
 import React, { useState } from "react";
 import "./Portfolio.css";
@@ -17,6 +21,8 @@ import resumeData from "../../utils/resumeData";
 
 const Portfolio = () => {
   const [tabValue, setTabValue] = useState("All");
+  const [projectDialog, setProjectDialog] = useState(false)
+
 
   return (
     <Grid container className="section pb_45 pt_45">
@@ -69,7 +75,7 @@ const Portfolio = () => {
                   <Grow in timeout={1000}>
                     <Card
                       className="custom_card"
-                      onClick={() => console.log("this has been clicked")}
+                      onClick={() => setProjectDialog(project)}
                     >
                       <CardActionArea>
                         <CardMedia
@@ -85,7 +91,7 @@ const Portfolio = () => {
                             variant='body2'
                             className="customCard_description"
                           >
-                            {project.description}
+                            {project.caption}
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -97,6 +103,19 @@ const Portfolio = () => {
           ))}
         </Grid>
       </Grid>
+
+      <Dialog open={projectDialog} onClose={() => setProjectDialog(false)}>
+      <DialogTitle onClose={() => setProjectDialog(false)}>{projectDialog.title}</DialogTitle>
+      <img src='' alt=''></img>
+      <DialogContent>
+        {projectDialog.description}
+      </DialogContent>
+      <DialogActions>
+        {projectDialog?.links?.map(link => (
+          <a href={link.link} target='_blank'>{link.icon}</a>
+        ))}
+      </DialogActions>
+    </Dialog>
     </Grid>
   );
 };
